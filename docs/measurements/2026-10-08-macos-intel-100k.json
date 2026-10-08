@@ -1,0 +1,78 @@
+{
+  "kind": "one_shot_metadata_scan_and_preview",
+  "measured_at": "2026-10-08T15:33:22.684944+00:00",
+  "system": "macOS-13.3.1-x86_64-i386-64bit",
+  "machine": "x86_64",
+  "processor": "i386",
+  "logical_cpus": 12,
+  "version": "PanBridge 0.1.0-dev",
+  "scan_pause": "5ms",
+  "cpu_budget_single_core_percent": 25.0,
+  "fixture": {
+    "files_per_side": 100000,
+    "layout": "flat",
+    "changed_left_files": 10,
+    "large_sparse_gib": 5,
+    "content": "empty files plus small changes; sparse file is metadata-only"
+  },
+  "limitations": [
+    "No file contents are hashed or transferred.",
+    "No background idle or watcher workload is measured.",
+    "Single samples depend on filesystem caches and machine load.",
+    "CPU percentage uses one logical core; RSS is the process lifetime peak."
+  ],
+  "scan": {
+    "command": "scan",
+    "scan": {
+      "entries": 100001,
+      "files": 100001,
+      "directories": 0,
+      "unsupported": 0,
+      "file_bytes": 5368709190
+    },
+    "metrics": {
+      "elapsed_seconds": 14.699339239,
+      "cpu_seconds": 3.6780920000000004,
+      "cpu_single_core_percent": 25.022158752832635,
+      "process_peak_rss_bytes": 10866688,
+      "heap_bytes": 2424560
+    }
+  },
+  "dry_run": {
+    "type": "summary",
+    "mode": "initial_merge_metadata_only",
+    "left": {
+      "entries": 100001,
+      "files": 100001,
+      "directories": 0,
+      "unsupported": 0,
+      "file_bytes": 5368709190
+    },
+    "right": {
+      "entries": 100001,
+      "files": 100001,
+      "directories": 0,
+      "unsupported": 0,
+      "file_bytes": 5368709120
+    },
+    "plan": {
+      "paths": 100001,
+      "copies_to_right": 0,
+      "copies_to_left": 0,
+      "directories_right": 0,
+      "directories_left": 0,
+      "needs_review": 10,
+      "skipped": 0,
+      "metadata_matches": 99991
+    },
+    "shown": 0,
+    "omitted": 10,
+    "metrics": {
+      "elapsed_seconds": 102.956728557,
+      "cpu_seconds": 25.720309,
+      "cpu_single_core_percent": 24.98166886272076,
+      "process_peak_rss_bytes": 36364288,
+      "heap_bytes": 3794872
+    }
+  }
+}

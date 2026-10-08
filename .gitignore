@@ -1,0 +1,16 @@
+# Go
+/bin/
+/dist/
+*.test
+*.out
+
+# Local state
+*.db
+*.db-shm
+*.db-wal
+.panbridge/
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
